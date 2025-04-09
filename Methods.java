@@ -1,6 +1,6 @@
 public class Methods {
     static void greetings() {
-        System.out.println("Hello World");
+        System.out.println("Hello World!");
     }
 
     static void mul(int i, int j, int k) {
