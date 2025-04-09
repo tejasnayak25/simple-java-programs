@@ -4,7 +4,7 @@ public class Method2A {
     }
     public static void main(String[] args) {
         System.out.println("Program Starts");
-        multiply(1, 2, 3);
+        multiply(2, 3, 4);
         System.out.println("Program Ends");
     }
 }
