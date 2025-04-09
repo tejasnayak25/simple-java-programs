@@ -6,11 +6,16 @@ public class Input1 {
         // create object
         Scanner scanner = new Scanner(System.in);
         
+        System.out.println("Enter age and cgpa: ");
         // use in-built methods
         int age = scanner.nextInt();
         double cgpa = scanner.nextDouble();
 
+        System.out.println("Entered age and cgpa: ");
+
         System.out.println(age);
         System.out.println(cgpa);
+
+        scanner.close();
     }
 }
