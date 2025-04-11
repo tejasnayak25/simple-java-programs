@@ -7,7 +7,7 @@ public class ReverseDigits1 {
 
         while(num > 0) {
             rem =  num % 10;
-            System.out.println(rem);
+            System.out.print(rem);
             num /= 10;
         }
     }
