@@ -4,14 +4,22 @@ public class Login {
     String username = "";
     String password = "";
     String pass2 = "abcde";
+    Scanner sc = new Scanner(System.in);
 
     void getUser() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter username: ");
-        username = scanner.nextLine();
+        username = sc.nextLine();
         System.out.print("Enter password: ");
-        password = scanner.nextLine();
-        scanner.close();
+        password = sc.nextLine();
+    }
+
+    int captcha() {
+        System.out.println("Enter captcha: (12bc8)");
+        String cp = sc.nextLine();
+        if(cp.equals("12bc8")) {
+            return 1;
+        }
+        return 0;
     }
 
     void loginUser() {
@@ -27,6 +35,13 @@ public class Login {
         Login lg = new Login();
         System.out.println("Welcome to login");
         lg.getUser();
-        lg.loginUser();
+        int cp = lg.captcha();
+        if(cp == 1) {
+            lg.loginUser();
+        } else {
+            System.out.println("Captcha Failed!");
+        }
+
+        lg.sc.close();
     }
 }
