@@ -1,5 +1,4 @@
 class Base {
-    static int i = 5;
     void property() {
         System.out.println("Parent's Properties");
     }
