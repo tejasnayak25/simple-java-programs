@@ -1,0 +1,184 @@
+https://writexo.com/AIML_SMVITM
+
+
+
+
+
+package com;
+
+
+
+class WhatsappV1 
+
+{
+
+ void deliveryReport()
+
+ {
+
+ System.out.println("Single Tick");
+
+ }
+
+ void chat()
+
+ {
+
+ System.out.println("Texting");
+
+ }
+
+}
+
+
+
+class WhatsappV2 extends WhatsappV1
+
+{
+
+ @Override
+
+ void deliveryReport()
+
+ {
+
+ super.deliveryReport();
+
+ System.out.println("Double Tick");
+
+ }
+
+ void calling() 
+
+ {
+
+ System.out.println("Voice/Video Calling");
+
+ }
+
+}
+
+
+
+class WhatsappV3 extends WhatsappV2
+
+{
+
+ @Override
+
+ void deliveryReport()
+
+ {
+
+ super.deliveryReport();
+
+ System.out.println("Blue Tick");
+
+ }
+
+ void status()
+
+ {
+
+ System.out.println("Status Updation");
+
+ }
+
+}
+
+public class WhatsappExe 
+
+{
+
+ public static void main(String[] args) {
+
+ WhatsappV3 wa = new WhatsappV3();
+
+  
+
+ wa.deliveryReport();
+
+ wa.chat();
+
+ wa.calling();
+
+ wa.status();
+
+  
+
+ }
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+package com;
+
+class Card
+
+{
+
+ void swipe()
+
+ {
+
+ System.out.println("Loading");
+
+ }
+
+}
+
+class CreditCard extends Card
+
+{
+
+ @Override
+
+ void swipe()
+
+ {
+
+ System.out.println("Due Increases");
+
+ }
+
+}
+
+class DebitCard extends Card
+
+{
+
+ @Override
+
+ void swipe()
+
+ {
+
+ System.out.println("Balance Decreases");
+
+ }
+
+}
+
+public class Program2 
+
+{
+
+ public static void main(String[] args) 
+
+ {
+
+ CreditCard cc = new CreditCard();
+
+ cc.swipe();
+
+ DebitCard dc = new DebitCard();
+
+ dc.swipe();
+
+ }
+
+}
+
