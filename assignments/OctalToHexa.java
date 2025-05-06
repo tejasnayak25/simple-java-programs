@@ -2,7 +2,7 @@ package assignments;
 
 import java.util.Scanner;
 
-public class OctalToHexaSimple {
+public class OctalToHexa {
     static int getDecimal(int octal) {
         int decimal = 0, base = 1;
         while (octal > 0) {
