@@ -17,5 +17,6 @@ public class StrongPassword {
         } else {
             System.out.println("Your password is weak!");
         }
+        sc.close();
     }
 }
