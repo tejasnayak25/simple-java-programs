@@ -64,12 +64,16 @@ public class Queue {
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
+        q.display();
+
+        System.out.println("Front element is: " + q.peek());
+
+        q.dequeue();
+        q.display();
+
         q.enqueue(40);
         q.enqueue(50);
         q.enqueue(60);
         q.display();
-        System.out.println("Peek: " + q.peek());
-        q.dequeue();
-        q.dequeue();
     }
 }
