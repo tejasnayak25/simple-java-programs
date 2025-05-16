@@ -1,4 +1,4 @@
-public class Patterns2 {
+public class PatternR {
     public static void main(String[] args) {
         char sym = '*';
         int n = 5;
