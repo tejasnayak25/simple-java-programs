@@ -1,13 +1,14 @@
-public class Pattern4 {
+public class PatternName {
     public static void main(String[] args) {
-        char sym = '*';
+        char sym;
+        char pat = '@';
         int n = 5;
 
         char[][][] name = new char[5][5][6];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sym = '*';
+                sym = pat;
                 if(i != 0 && j != n/2) {
                     sym = ' ';
                 }
@@ -19,7 +20,7 @@ public class Pattern4 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sym = '*';
+                sym = pat;
                 if(!(i == 0 || i == n/2 || i == n-1) && j != 0) {
                     sym = ' ';
                 }
@@ -31,13 +32,13 @@ public class Pattern4 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sym = '*';
+                sym = pat;
                 if(i != 0) {
                     if(j != n-2 && (!(i == n-1 || i == n-2) || j!=0)) {
                         sym = ' ';
                     }
                     if((i == n-1 && j < n-1)) {
-                        sym = '*';
+                        sym = pat;
                     }
                 }
 
@@ -48,7 +49,7 @@ public class Pattern4 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sym = '*';
+                sym = pat;
 
                 if(!(i == 0 || i == n/2) && !(j == 0 || j == n-1)) {
                     sym = ' ';
@@ -61,7 +62,7 @@ public class Pattern4 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sym = '*';
+                sym = pat;
 
                 if(!(i == 0 || i == n-1 || i == n/2)) {
                     if(i < n/2) {
