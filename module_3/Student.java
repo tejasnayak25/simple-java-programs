@@ -9,6 +9,11 @@ public class Student {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return age + " " + name;
+    }
+
     public static void main(String[] args) {
         Student s1 =new Student(20, "ram");
         Student s2 = new Student(18, "sita");
@@ -17,8 +22,10 @@ public class Student {
         s[0] = s1;
         s[1] = s2;
 
+        // Array using Initializers: -> Student[] s = { s1, s2 };
+
         for (int i = 0; i < s.length; i++) {
-            System.out.println(s[i].age+" "+s[i].name);
+            System.out.println(s[i]);
         }
     }
 }
