@@ -1,4 +1,4 @@
-package strings;
+package strings_day1;
 
 public class StringDemo {
     public static void main(String[] args) {
