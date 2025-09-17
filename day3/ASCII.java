@@ -23,6 +23,6 @@ public class ASCII {
         System.out.println("Uppercase: "+c);
         System.out.println("Lowercase: "+s);
         System.out.println("Spaces: "+sp);
-        System.out.println("Digits: "+d);
+        System.out.println("Numbers: "+d);
     }
 }
