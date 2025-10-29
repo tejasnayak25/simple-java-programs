@@ -2,7 +2,7 @@ package tasks;
 
 public class Program12c {
     public static void main(String[] args) {
-        int[][][] myTensor = {
+        int[][][] myArray = {
             {
                 {1, 2, 3},
                 {4, 5, 6}
@@ -17,7 +17,7 @@ public class Program12c {
         boolean isFirstBlock = true;
         boolean isFirstRow = true;
 
-        for (int[][] block : myTensor) {
+        for (int[][] block : myArray) {
             dim1++;
             if (isFirstBlock) {
                 for (int[] row : block) {
@@ -26,10 +26,10 @@ public class Program12c {
                         for (int element : row) {
                             dim3++;
                         }
-                        isFirstRow = false; // Count 3rd dim only once
+                        isFirstRow = false;
                     }
                 }
-                isFirstBlock = false; // Count 2nd dim only once
+                isFirstBlock = false;
             }
         }
         
