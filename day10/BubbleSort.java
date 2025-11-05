@@ -1,4 +1,4 @@
-// package day10;
+package day10;
 
 public class BubbleSort {
     public static void main(String[] args) {
