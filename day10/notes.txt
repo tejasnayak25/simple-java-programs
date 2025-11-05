@@ -14,3 +14,57 @@ Types of sorting techniques:
 Selection sort:
     is the process of select the each and every element from the unsorted array, compare and swap repeatedly to make a sorted array.
 
+Ex:
+40 30 10 20
+
+Step 1:
+i = 0, j = 1
+    40 > 30 - True
+
+    30 40 10 20
+
+i = 0, j = 2
+    30 > 10 - True
+
+    10 40 30 20
+
+i = 0, j = 3
+    10 > 20 - False
+
+Step 2:
+i = 1, j = 2
+    40 > 30 - True
+
+    10 30 40 20
+
+i = 1, j = 3
+    30 > 20 - True
+
+    10 20 40 30
+
+Step 3:
+i = 2, j = 3
+    40 > 30 - True
+
+    10 20 30 40
+
+Insertion sort:
+    is the process of inserting the each and every element from unsorted subarray to sorted subarray.
+
+Step 1:
+Assume 0th index is a sorted subarray, rest of all is unsorted subarray.
+
+Step 2:
+Assume 1st index is a temp.
+
+Step 3:
+If temp value is less than previous value, swap, else temp = temp.next
+
+Step 4:
+Repeat step 3 until sorted array is found.
+
+BubbleSort:
+    only compares adjacent elements.
+
+Rule of BubbleSort:
+Placing largest number at the correct position.
