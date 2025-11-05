@@ -1,0 +1,16 @@
+Sorting techniques:
+    Sorting is a process of arranging all elements in ordered manner.
+    Ascending / Descending
+
+Types of sorting techniques:
+1) Selection sort
+2) Insertion sort
+3) Bubble sort
+4) Merge sort
+5) Quick sort
+6) Radix sort
+7) Heap sort
+
+Selection sort:
+    is the process of select the each and every element from the unsorted array, compare and swap repeatedly to make a sorted array.
+
