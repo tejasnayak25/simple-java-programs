@@ -41,6 +41,22 @@ class SLL {
             n = n.next;
         }
     }
+
+    public void search(int val) {
+        int p = 0;
+        Node n = head;
+        while (n!=null) {
+            if(n.data == val) {
+                p=1;break;
+            }
+            n=n.next;
+        }
+        if(p==1) {
+            System.out.println(val + " found!");
+        } else {
+            System.out.println(val + " not found!");
+        }
+    }
 }
 
 public class MySLL {
@@ -53,5 +69,10 @@ public class MySLL {
         o.insert(50);
 
         o.dis();
+
+        System.out.println();
+
+        o.search(40);
+        o.search(100);
     }   
 }
