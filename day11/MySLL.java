@@ -1,4 +1,4 @@
-package day11;
+// package day11;
 
 class Node {
     int data;
@@ -57,6 +57,20 @@ class SLL {
             System.out.println(val + " not found!");
         }
     }
+
+    public void del(int tar) {
+        if(head.data == tar) {
+            head = head.next;
+        } else {
+            Node n = head;
+            while (n.next != null && n.next.data != tar) {
+                n = n.next;
+            }
+            if(n.next != null) {
+                n.next = n.next.next;
+            }
+        }
+    }
 }
 
 public class MySLL {
@@ -74,5 +88,9 @@ public class MySLL {
 
         o.search(40);
         o.search(100);
+
+        o.del(30);
+
+        o.dis();
     }   
 }
